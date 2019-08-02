@@ -26,6 +26,13 @@
         <!-- Release: enable publication to Bintray -->
         <artifactsToPublish>${project.groupId}:${project.artifactId}:jar</artifactsToPublish>
 
+        <!-- To configure maven-license-plugin to check license headers -->
+        <license.name>GNU LGPL v3</license.name>
+        <license.owner>flytreeleft</license.owner>
+        <license.title>${project.name}</license.title>
+        <license.years>2017</license.years>
+        <license.mailto>mailto:flytreeleft@126.com</license.mailto>
+
     </properties>
 
     <dependencies>
