@@ -9,7 +9,6 @@
 
     <name>Keycloak Authentication for SonarQube</name>
     <description>Keycloak Authentication for SonarQube</description>
-    <url>https://github.com/flytreeleft/sonar-auth-keycloak-plugin</url>
 
     <parent>
         <groupId>org.sonarsource.parent</groupId>
@@ -19,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <keycloak.version>3.3.0.CR1-SNAPSHOT</keycloak.version>
+        <keycloak.version>6.0.1</keycloak.version>
 
         <sonar.pluginClass>org.github.flytreeleft.sonar.auth.keycloak.AuthKeycloakPlugin</sonar.pluginClass>
         <!-- used for deployment to SonarSource Artifactory -->
@@ -27,34 +26,7 @@
         <!-- Release: enable publication to Bintray -->
         <artifactsToPublish>${project.groupId}:${project.artifactId}:jar</artifactsToPublish>
 
-        <!-- To configure maven-license-plugin to check license headers -->
-        <license.name>GNU LGPL v3</license.name>
-        <license.owner>flytreeleft</license.owner>
-        <license.title>${project.name}</license.title>
-        <license.years>2017</license.years>
-        <license.mailto>mailto:flytreeleft@126.com</license.mailto>
     </properties>
-
-    <issueManagement>
-        <system>github</system>
-        <url>https://github.com/flytreeleft/sonar-auth-keycloak-plugin/issues</url>
-    </issueManagement>
-
-    <scm>
-        <connection>scm:git:git@github.com:flytreeleft/sonar-auth-keycloak-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:flytreeleft/sonar-auth-keycloak-plugin.git</developerConnection>
-        <url>https://github.com/flytreeleft/sonar-auth-keycloak-plugin</url>
-        <tag>HEAD</tag>
-    </scm>
-
-    <developers>
-        <developer>
-            <id>flytreeleft</id>
-            <name>flytreeleft</name>
-            <email>flytreeleft@126.com</email>
-            <url>https://flytreeleft.github.io/</url>
-        </developer>
-    </developers>
 
     <dependencies>
         <dependency>
